@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">EComTest</string>
+    <string name="action_settings">Settings</string>
+
+    <!--Drawer-->
+    <string name="open_drawer">Drawer Open</string>
+    <string name="close_drawer">Drawer Close</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="checkout">Checkout</string>
+    <string name="my_cart">My Cart</string>
+    <string name="products">Products</string>
+    <string name="my_orders">My Orders</string>
+    <string name="your_cart_items_will_appear_here">Your cart items will appear here</string>
+    <string name="your_orders_will_appear_here">Your orders will appear here</string>
+</resources>

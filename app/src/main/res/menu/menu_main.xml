@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.ecomtest.ui.dashboard.DashboardActivity">
+    <item
+        android:id="@+id/action_my_cart"
+        android:icon="@drawable/cart_outline"
+        android:orderInCategory="100"
+        android:title="@string/my_cart"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_my_order"
+        android:icon="@drawable/cart_arrow_up"
+        android:orderInCategory="100"
+        android:title="@string/my_orders"
+        app:showAsAction="ifRoom" />
+
+</menu>
