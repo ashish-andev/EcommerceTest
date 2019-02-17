@@ -12,8 +12,4 @@ public abstract class AppDatabase extends RoomDatabase {
 
     public abstract CartItemsDao cartItemsDao();
 
-    @Override
-    public void clearAllTables() {
-
-    }
 }

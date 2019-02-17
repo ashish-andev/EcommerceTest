@@ -60,6 +60,16 @@ public class DashboardActivity extends BaseActivity<ActivityDashboardBinding, Da
     }
 
     @Override
+    public void openMyCart() {
+        startActivity(new Intent(DashboardActivity.this, MyCartActivity.class));
+    }
+
+    @Override
+    public void openMyOrder() {
+        startActivity(new Intent(DashboardActivity.this, MyOrdersActivity.class));
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mBinding = getViewDataBinding();
@@ -104,10 +114,10 @@ public class DashboardActivity extends BaseActivity<ActivityDashboardBinding, Da
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_my_cart:
-                startActivity(new Intent(DashboardActivity.this, MyCartActivity.class));
+                openMyCart();
                 return true;
             case R.id.action_my_order:
-                startActivity(new Intent(DashboardActivity.this, MyOrdersActivity.class));
+                openMyOrder();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
