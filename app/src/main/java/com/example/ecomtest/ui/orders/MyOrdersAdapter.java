@@ -6,7 +6,7 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
 import com.example.ecomtest.data.model.db.CartItem;
-import com.example.ecomtest.databinding.ItemCartBinding;
+import com.example.ecomtest.databinding.ItemOrdersBinding;
 import com.example.ecomtest.ui.base.BaseViewHolder;
 
 import java.util.ArrayList;
@@ -35,9 +35,9 @@ public class MyOrdersAdapter extends RecyclerView.Adapter<BaseViewHolder> {
     @NonNull
     @Override
     public BaseViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        ItemCartBinding cartBinding = ItemCartBinding.inflate(LayoutInflater.from(parent.getContext()),
+        ItemOrdersBinding ordersBinding = ItemOrdersBinding.inflate(LayoutInflater.from(parent.getContext()),
                 parent, false);
-        return new ItemViewHolder(cartBinding);
+        return new ItemViewHolder(ordersBinding);
     }
 
     public void addItems(List<CartItem> productList) {
@@ -51,9 +51,9 @@ public class MyOrdersAdapter extends RecyclerView.Adapter<BaseViewHolder> {
 
     public class ItemViewHolder extends BaseViewHolder {
 
-        private ItemCartBinding mBinding;
+        private ItemOrdersBinding mBinding;
 
-        public ItemViewHolder(ItemCartBinding binding) {
+        public ItemViewHolder(ItemOrdersBinding binding) {
             super(binding.getRoot());
             this.mBinding = binding;
         }
